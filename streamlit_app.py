@@ -35,6 +35,42 @@ def main():
 
     # Load Goalie Playoff stats
     goalie_playoff_data = load_goalie_playoff_data()
+
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #f0f2f6;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #ff5733;
+        }
+        table.dataframe {
+            font-size: 14px;
+            border-collapse: collapse;
+            margin: 20px 0;
+            width: 100%;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        td {
+            background-color: #fff;
+            color: #333;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     
     # Display team statistics
     st.write("## Team Statistics")
