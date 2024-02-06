@@ -13,7 +13,7 @@ def main():
     data = load_data()
     
     # Display the data
-    st.write("## Players Statistics")
+    st.write("## Team Stats vs League Average")
     st.write(data)
 
 if __name__ == "__main__":
