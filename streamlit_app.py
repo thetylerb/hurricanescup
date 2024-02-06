@@ -3,7 +3,7 @@ import pandas as pd
 
 def load_data():
     # Load the data from CSV file
-    data = pd.read_csv("carolina_hurricanes_2006_stats.csv")
+    data = pd.read_csv("teamstats.csv")
     return data
 
 def main():
