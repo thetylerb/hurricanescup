@@ -3,7 +3,7 @@ import pandas as pd
 
 def load_team_data():
     # Load the team data from CSV file
-    team_data = pd.read_csv("carolina_hurricanes_2006_team_stats.csv")
+    team_data = pd.read_csv("team_stats.csv")
     return team_data
 
 def load_player_data():
