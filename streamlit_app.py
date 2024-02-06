@@ -8,7 +8,7 @@ def load_team_data():
 
 def load_player_data():
     # Load the individual player data from CSV file
-    player_data = pd.read_csv("carolina_hurricanes_2006_player_stats.csv", encoding="utf-8")
+    player_data = pd.read_csv("player_stats.csv", encoding="utf-8")
     return player_data
 
 def main():
