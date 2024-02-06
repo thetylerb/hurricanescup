@@ -11,6 +11,11 @@ def load_player_data():
     player_data = pd.read_csv("player_stats.csv", encoding="utf-8")
     return player_data
 
+def load_playoff_data():
+    # Load the playoff skater data from the CSV file
+    playoff_data = pd.read_csv("playoff_stats.csv")
+    return playoff_data
+
 def main():
     st.title("Carolina Hurricanes 2006 Stanley Cup Winning Season Statistics")
     
@@ -19,6 +24,9 @@ def main():
     
     # Load player data
     player_data = load_player_data()
+
+    # Load Playoff Data
+    playoff_data = load_playoff_data()
     
     # Display team statistics
     st.write("## Team Statistics")
@@ -27,6 +35,10 @@ def main():
     # Display individual player statistics
     st.write("## Individual Player Statistics")
     st.write(player_data)
+
+    # Display playoff statistics
+    st.write("## Skater Playoff Statistics")
+    st.write(playoff_data)
 
 if __name__ == "__main__":
     main()
